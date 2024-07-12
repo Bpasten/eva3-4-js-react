@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Petfood Discount</title>
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#home" class="logo">Petfood Discount</a>
+        <div class="nav-links">
+            <a href="#home"><i class='bx bxs-home icon'></i>Inicio</a>
+            <a href="#about"><i class='bx bxs-info-circle icon'></i>Sobre Nosotros</a>
+            <a href="#formulario"><i class='bx bxs-envelope icon'></i>Contacto</a>
+        </div>
+        <div class="auth-links">
+            <a href=""><i class='bx bxs-cart icon'></i>Carrito</a>
+            <a href="login.html" id="loginBtn">Login</a>
+            <a href="SignUp.html" id="signupBtn">Sign Up</a>
+        </div>
+    </div>
+
+    
+    <!-- Sección Nuestros Productos -->
+    <div class="card-container">
+        <div class="card">
+            <img src="img/bolsa2.jpg" alt="Bolsa de comida para perros">
+            <div class="card-content">
+                <h3>Bolsa para Perros premiada</h3>
+                <p>Precio: $39.990</p>
+                <a href="" class="buy-btn">Comprar</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="img/bolsa5G.jpg" alt="Bolsa de comida para gatos">
+            <div class="card-content">
+                <h3>Bolsa para Gatos con juguete extra</h3>
+                <p>Precio: $19.990</p>
+                <a href="" class="buy-btn">Comprar</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="img/bolsa4.jpg" alt="Bolsa de alimento para perros grande">
+            <div class="card-content">
+                <h3>Bolsa de alimento para Perros</h3>
+                <p>Precio: $45.990</p>
+                <a href="" class="buy-btn">Comprar</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="img/bolsa6G.jpg" alt="Bolsa de alimento para gatos">
+            <div class="card-content">
+                <h3>Bolsa de alimento para Gatos</h3>
+                <p>Precio: $15.990</p>
+                <a href="" class="buy-btn">Comprar</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="img/bolsa7G.jpg" alt="Bolsa de alimento para gatos grande">
+            <div class="card-content">
+                <h3>Bolsa de alimento para Gatos</h3>
+                <p>Precio: $29.990</p>
+                <a href="" class="buy-btn">Comprar</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="img/collar.jpg" alt="Collar para perros">
+            <div class="card-content">
+                <h3>Collar para perro</h3>
+                <p>Precio: $3.000</p>
+                <a href="" class="buy-btn">Comprar</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="img/collar4.jpg" alt="Collar para gatos">
+            <div class="card-content">
+                <h3>Collar para Gatos</h3>
+                <p>Precio: $3.000</p>
+                <a href="" class="buy-btn">Comprar</a>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección Acerca de -->
+    <section id="about">
+        <h2>Acerca de</h2>
+        <p>En Petfood Discount nos preocupamos por la salud y bienestar de tus mascotas, 
+        por eso ofrecemos los mejores productos a los mejores precios. 
+        Nuestro objetivo es que puedas darle a tus mascotas la mejor alimentación, los mejores juguetes,
+        y lo mejor en premios para perros y gatos y sin tener que gastar una fortuna.</p>
+    </section>
+     <!-- Formulario de descuento -->
+     <section id="formulario">
+        <div class="formulario">
+            <h3><strong>Completa el formulario para recibir tu descuento -30% <br> en tu primera compra!!</strong></h3>
+            <form class="background" action="/procesar_formulario.php" method="post">
+                <label class="label" for="nombre"><b>Nombre:</b></label>
+                <input class="input" type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+                
+                <label class="label" for="apellido"><b>Apellido:</b></label>
+                <input class="input" type="text" id="apellido" name="apellido" placeholder="Apellido" required>
+                
+                <label class="label" for="email"><b>Email:</b></label>
+                <input class="input" type="email" id="email" name="email" placeholder="name@example.com" required>
+                
+                <div class="button-container">
+                    <button class="button" type="submit">Enviar</button>
+                    <button class="button" type="reset">Limpiar</button>
+
+                </div>
+            </form>
+        </div>
+    </section>
+
+
+    <!-- Sección Contacto -->
+    <section id="contact">
+        <h2>Contacto</h2>
+        <p>Si tienes alguna pregunta o quieres calificar tu compra, no dudes en contactarnos.</p>
+        <form class="contact-form" action="/procesar_contacto.php" method="post">
+            <label class="label" for="nombre">Nombre:</label>
+            <input class="input" type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+            
+            <label class="label" for="email">Email:</label>
+            <input class="input" type="email" id="email" name="email" placeholder="name@example.com" required>
+            
+            <label class="label" for="mensaje">Califica tu compra:</label>
+            <textarea class="input" id="mensaje" name="mensaje" rows="5" placeholder="Deja tus comentarios aquí..." required></textarea>
+            
+            <div class="button-container">
+                <button class="button" type="submit">Enviar</button>
+            </div>
+        </form>
+    </section>
+
+   
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Petfood Discount. Todos los derechos reservados.</p>
+        <p>Diseñado por benjamin</a></p>
+    </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="JS/script.js"></script>
+</body>
+</html>

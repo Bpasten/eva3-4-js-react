@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(to right, #5FC3E4, #E55D87); 
+}
+.forgot-password {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.forgot-password h1 {
+    margin: 0 0 20px;
+    font-size: 24px;
+    color: #333;
+}
+.forgot-password input[type="text"],
+.forgot-password input[type="password"],
+.forgot-password input[type="email"],
+.forgot-password input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #ffcccb;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.forgot-password input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #ffcccb;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.forgot-password input[type="submit"]:hover {
+    background-color: #ffb6c1;
+}
+.forgot-password p {
+    text-align: center;
+    color: #333;
+}
+.forgot-password p a {
+    color: #333;
+    text-decoration: none;
+}
+.forgot-password p a:hover {
+    text-decoration: underline;
+}
+.back-link {
+    display: block;
+    margin: 10px 0;
+    text-align: center;
+    color: #333;
+    text-decoration: none;
+}
+.back-link:hover {
+    text-decoration: underline;
+}
+
+/* CSS para la página de Olvidé mi contraseña */
+.forgot-password input[type="reset"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #ffcccb; /* Misma tonalidad que el botón de enviar */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #333; /* Color de texto */
+}
+
+.forgot-password input[type="reset"]:hover {
+    background-color: #ffb6c1; /* Cambio de tono al pasar el mouse */
+}
+
+.forgot-password input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #ffcccb; /* Borde similar al resto de los campos */
+    border-radius: 5px;
+    box-sizing: border-box;
+    color: #333; /* Color de texto */
+}

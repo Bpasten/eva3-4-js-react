@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(to right, #5FC3E4, #E55D87); 
+}
+.sign-up {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.sign-up h1 {
+    margin: 0 0 20px;
+    font-size: 24px;
+    color: #333;
+}
+.sign-up input[type="text"],
+.sign-up input[type="password"],
+.sign-up input[type="email"],
+.sign-up input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #ffcccb;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.sign-up input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #ffcccb;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.sign-up input[type="submit"]:hover {
+    background-color: #ffb6c1;
+}
+.sign-up p {
+    text-align: center;
+    color: #333;
+}
+.sign-up p a {
+    color: #333;
+    text-decoration: none;
+}
+.sign-up p a:hover {
+    text-decoration: underline;
+}
+.back-link {
+    display: block;
+    margin: 10px 0;
+    text-align: center;
+    color: #333;
+    text-decoration: none;
+}
+.back-link:hover {
+    text-decoration: underline;
+}
